@@ -26,10 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoarray = [];
-  for(var i =0;i < array.length; i++)
-  {nuevoarray[i]+1;}
-  return nuevoarray;
+  var arrayDeEnterosIncrementadosEn1 = [];
+  Math.round (arrayDeEnterosIncrementadosEn1)
+  for (var i = 0 ; i < array.length ; i++){
+      arrayDeEnterosIncrementadosEn1.push (array[i] + 1)
+  }
+  return arrayDeEnterosIncrementadosEn1;
 }
 
 
@@ -97,14 +99,6 @@ function promedioResultadosTest(resultadosTest) {
 }
 
 
-
-function numeroMasGrande(numeros) {
-  // "numeros" debe ser una matriz de enteros (int/integers)
-  // Devuelve el número más grande
-  // Tu código:
-  return agregarNumeros(resultadosTest) / resultadosTest.length;
-}
-
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
@@ -117,6 +111,8 @@ function numeroMasGrande(numeros) {
   }
   return maximo;
 }
+  
+
 
 
 function multiplicarArgumentos() {
@@ -136,12 +132,12 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   let contador = 0;
-  for (let i = 0; i < arreglo.length ; i++) {
-    if(arreglo[i] > 19){
-      contador++
+  for (let i = 0; i < arreglo.length; i++) {
+    if(arreglo[i] > 18){
+      contador = contador + 1; 
     }
   }
-  return contador
+  return contador;
 }
 
 
